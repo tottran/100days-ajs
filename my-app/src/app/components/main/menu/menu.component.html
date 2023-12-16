@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let route of routes">
+    <a [routerLink]="route.slug" routerLinkActive="active" ariaCurrentWhenActive="page">{{route.key}}</a>
+  </li>
+</ul>

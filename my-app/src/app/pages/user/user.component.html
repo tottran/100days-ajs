@@ -1,0 +1,14 @@
+<h2>user works!</h2>
+
+<nav>
+  <ul>
+    <li>
+      <app-back-link></app-back-link>
+    </li>
+    <li *ngFor="let route of routes">
+      <a [routerLink]="route.slug" routerLinkActive="active" ariaCurrentWhenActive="page">{{route.key}}</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
